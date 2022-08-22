@@ -10,9 +10,13 @@ public class EnemyShip : MonoBehaviour
     public int health = 100;
 
     //get the death effect animation
-    public GameObject deathEffect;
+    public GameObject DeathEffect;
 
     public GameObject EnemyFire;
+
+    public GameObject DropWeapon;
+
+    public int chanceToDrop;
 
 
     [SerializeField]
@@ -54,8 +58,12 @@ public class EnemyShip : MonoBehaviour
     private void Die()
     {
         {
+            chanceToDrop = Random.Range(1,3);
+            if(chanceToDrop == 1){
+                Instantiate(DropWeapon, transform.position, Quaternion.identity);
+            }
             //create the death animation
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Instantiate(DeathEffect, transform.position, Quaternion.identity);
             //destroy the ship
             Destroy(gameObject);
 
