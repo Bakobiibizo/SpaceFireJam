@@ -138,8 +138,17 @@ MonoBehaviour:
   blasterPieces: 0
   lazerPieces: 0
   missilePieces: 0
-  weaponSlot: {fileID: 2119009989573063780, guid: 551c8b5a2a88eb247954c7f4d815d218, type: 3}
-  blaster: {fileID: 1383782589299464249, guid: 12bf0867008c51e419691b115c6b1569, type: 3}
+  slots: 0101
+  WeaponSlot: {fileID: 2119009989573063780, guid: 551c8b5a2a88eb247954c7f4d815d218, type: 3}
+  WeaponSlot2: {fileID: 8854662110815385066, guid: 53f6d65f3d3d6d44bbf83d170efbd8c5, type: 3}
+  weaponSlotsArray:
+  - {fileID: 2119009989573063780, guid: 551c8b5a2a88eb247954c7f4d815d218, type: 3}
+  - {fileID: 8854662110815385066, guid: 53f6d65f3d3d6d44bbf83d170efbd8c5, type: 3}
+  Blaster: {fileID: 1383782589299464249, guid: 12bf0867008c51e419691b115c6b1569, type: 3}
+  Blaster2: {fileID: 1056217514763865351, guid: 283a611367830a542a174e621f9ff198, type: 3}
+  blasterArray:
+  - {fileID: 1383782589299464249, guid: 12bf0867008c51e419691b115c6b1569, type: 3}
+  - {fileID: 1056217514763865351, guid: 283a611367830a542a174e621f9ff198, type: 3}
 --- !u!50 &6846463785483884570
 Rigidbody2D:
   serializedVersion: 4

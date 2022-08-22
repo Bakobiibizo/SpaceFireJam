@@ -16,7 +16,7 @@ public class EnemyShip : MonoBehaviour
 
 
     [SerializeField]
-    private float enemySpeed = 0.5f;
+    private float enemySpeed = 0.05f;
 
     private int movementChoice;
 
