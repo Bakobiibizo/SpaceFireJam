@@ -17,18 +17,24 @@ public class EnemyFire : MonoBehaviour
 
     void Update()
     {
-        transform.position += new Vector3(0,-1,0)*Time.deltaTime*enemyProjectileSpeed;
+        transform.position += new Vector3(0, -1, 0) * Time.deltaTime * enemyProjectileSpeed;
     }
 
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
 
-        PlayerShip player = hitInfo.GetComponent<PlayerShip>();
+        OnHit onHit = hitInfo.GetComponent<OnHit>();
 
         if (hitInfo.tag == "Player")
         {
-            player.TakeDamage(damage);
+            onHit.TakeDamage(damage);
+            Destroy(gameObject);
+            Instantiate(enemyHit, transform.position, Quaternion.identity);
+        }
+        if (hitInfo.tag == "Weapon")
+        {
+            onHit.TakeDamage(damage);
             Destroy(gameObject);
             Instantiate(enemyHit, transform.position, Quaternion.identity);
         }

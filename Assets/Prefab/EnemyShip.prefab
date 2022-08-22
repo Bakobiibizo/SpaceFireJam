@@ -128,6 +128,8 @@ GameObject:
   - component: {fileID: 5300210600567920194}
   - component: {fileID: 5300210600567920196}
   - component: {fileID: 8341150220321925759}
+  - component: {fileID: 985650459596305270}
+  - component: {fileID: 2888965832696970703}
   m_Layer: 0
   m_Name: EnemyShip
   m_TagString: Enemy
@@ -235,3 +237,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aniTime: 20
+--- !u!114 &985650459596305270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300210600567920192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98952abd2574bc046959fdcc21d50b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathEffect: {fileID: 0}
+--- !u!114 &2888965832696970703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300210600567920192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2ea498d9e8740aa6a8af05f8a759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponFire: {fileID: 5477015379917617933, guid: 4c689efa8f649214f91ea729c0c838ef, type: 3}
+  weaponSpawn: {fileID: 0}

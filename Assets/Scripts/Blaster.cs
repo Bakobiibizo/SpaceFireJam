@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Blaster: MonoBehaviour
+public class Blaster : MonoBehaviour
 {
-  public float playerSpeed= 1f;
 
-    void awake(){
+    void awake()
+    {
 
     }
     void Start()
@@ -14,7 +14,6 @@ public class Blaster: MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 

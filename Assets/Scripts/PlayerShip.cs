@@ -5,24 +5,16 @@ using UnityEngine;
 public class PlayerShip : MonoBehaviour
 {
 
-    public GameObject weaponFire;
-    //declaring a transform for the position that it will spawn in
-    public Transform weaponSpawnTransform;
-    // declaring the ships rigidbody
     private Rigidbody2D playerShip;
     // declaring the speed of the ship
     public float playerSpeed = 3f;
-
-    public int health = 100;
-
-    //get the death effect animation
-    public GameObject deathEffect;
 
     public float blasterPieces = 0f;
 
     public float lazerPieces = 0f;
 
     public float missilePieces = 0f;
+
 
     public GameObject weaponSlot;
 
@@ -44,57 +36,27 @@ public class PlayerShip : MonoBehaviour
         Vector3 playerInput = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0);
         //moving the player based on player input.
         transform.position = transform.position + playerInput.normalized * playerSpeed * Time.deltaTime;
-
-        //checking if the fire button has been fired
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-        {
-            //create the weapon fire animation
-            Instantiate(weaponFire, weaponSpawnTransform.position, weaponSpawnTransform.rotation);
-        }
     }
 
-    public void TakeDamage(int damage)
+    public void WeaponUpgrades(string weaponType)
     {
-        //ship takes damage
-        health -= damage;
-        //if at or below 0
-        if (health <= 0)
+        if (weaponType == "blaster")
         {
-            //run the die function
-            Die();
+            blasterPieces++;
+        }
+        if (weaponType == "lazer")
+        {
+            lazerPieces++;
+        }
+        if (weaponType == "missile")
+        {
+            missilePieces++;
+        }
+        if (blasterPieces >= 2)
+        {
+            Instantiate(blaster, weaponSlot.transform);
+
         }
     }
-
-        private void Die()
-    {
-        {
-            //create the death animation
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
-            //destroy the ship
-            Destroy(gameObject);
-
-        }
-    }
-
-        public void WeaponUpgrades(string weaponType)
-        {
-            if(weaponType == "blaster")
-            {
-                blasterPieces ++;
-            }
-            if (weaponType == "lazer")
-            {
-                lazerPieces ++;
-            }
-            if (weaponType == "missile")
-            {
-                missilePieces ++;
-            }
-            if (blasterPieces >=2)
-            {
-                Instantiate(blaster, weaponSlot.transform);
-
-            }
-        }
 
 }

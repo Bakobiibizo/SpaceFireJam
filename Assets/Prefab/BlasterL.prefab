@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 906263780299603817}
   - component: {fileID: 3319461408642113022}
   - component: {fileID: 110680562323666520}
+  - component: {fileID: 4322903976707852661}
+  - component: {fileID: 3778699418261933351}
+  - component: {fileID: 5773493440224247589}
   m_Layer: 0
   m_Name: BlasterL
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7979065179910561679}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -97,4 +101,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0bb6a5e5cf6e84faf04aa9d2d15f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 1.25
+--- !u!61 &4322903976707852661
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383782589299464249}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0033961795, y: -0.017358242}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2, y: 0.2}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.06943583, y: 0.04603992}
+  m_EdgeRadius: 0
+--- !u!114 &3778699418261933351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383782589299464249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98952abd2574bc046959fdcc21d50b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 40
+  deathEffect: {fileID: 5312208882027199082, guid: 510f963319727754e9980c6bb4061a49, type: 3}
+--- !u!114 &5773493440224247589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383782589299464249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47e2ea498d9e8740aa6a8af05f8a759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponFire: {fileID: 5477015379917617933, guid: 4c689efa8f649214f91ea729c0c838ef, type: 3}
+  weaponSpawn: {fileID: 2300086089170095628}
+--- !u!1001 &8165523093156874110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 906263780299603817}
+    m_Modifications:
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978777517979879794, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+      propertyPath: m_Name
+      value: BlasterWeaponSpawn
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+--- !u!1 &2300086089170095628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7978777517979879794, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+  m_PrefabInstance: {fileID: 8165523093156874110}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7979065179910561679 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+  m_PrefabInstance: {fileID: 8165523093156874110}
+  m_PrefabAsset: {fileID: 0}
