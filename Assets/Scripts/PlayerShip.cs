@@ -21,9 +21,9 @@ public class PlayerShip : MonoBehaviour
 
     public GameObject[] blasterArray;
 
-    public GameObject newBlaster;
+    private GameObject newBlaster;
 
-    public string slotNumber;
+    private string slotNumber;
 
 
 

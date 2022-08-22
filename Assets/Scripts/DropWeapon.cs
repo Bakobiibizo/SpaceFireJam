@@ -10,20 +10,29 @@ public class DropWeapon : MonoBehaviour
     private float speed = 2f;
 
     public string weaponType = "blaster";
+    public AudioSource audioSource;
 
+    private void Awake(){
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
 
     void Update()
     {
-    transform.position += new Vector3(0.0f,-1.0f, 0.0f) * speed * Time.deltaTime;
+        transform.position += new Vector3(0.0f, -1.0f, 0.0f) * speed * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerShip player = collision.GetComponent<PlayerShip>();
-        if (collision.tag == "Player") {
+        if (collision.tag == "Player")
+        {
             {
+
+                audioSource.Play();
                 Destroy(gameObject);
+
                 player.WeaponUpgrades(weaponType);
+
             }
         }
 
