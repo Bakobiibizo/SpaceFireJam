@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerShip : MonoBehaviour
 {
-    //declaring a game object weaponfire that refers to the prefab weaponfire
+
     public GameObject weaponFire;
     //declaring a transform for the position that it will spawn in
     public Transform weaponSpawnTransform;
@@ -28,10 +28,14 @@ public class PlayerShip : MonoBehaviour
 
     public GameObject blaster;
 
+
     void Start()
     {
         //accessing the rigidbody component
         playerShip = GetComponent<Rigidbody2D>();
+        weaponSlot = Instantiate(weaponSlot, gameObject.transform);
+
+
     }
 
     void Update()
@@ -88,7 +92,7 @@ public class PlayerShip : MonoBehaviour
             }
             if (blasterPieces >=2)
             {
-                Instantiate(blaster, weaponSlot.transform.position, Quaternion.identity);
+                Instantiate(blaster, weaponSlot.transform);
 
             }
         }

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyProjectileSpeed: 1
   damage: 20
-  enemyLifespan: 3
+  enemyLifespan: 2
   enemyHit: {fileID: 4512086912070105489, guid: eb8885434b3079a45b749e0f5e869cd3, type: 3}
 --- !u!114 &1518740600772142517
 MonoBehaviour:
@@ -194,4 +194,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c2d08326fb6104297df4d625da6c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aniTime: 3
+  aniTime: 2

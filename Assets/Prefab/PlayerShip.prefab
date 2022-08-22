@@ -148,7 +148,6 @@ Transform:
   m_Children:
   - {fileID: 6846463784146775198}
   - {fileID: 6846463784813537526}
-  - {fileID: 6376271020529014649}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -172,9 +171,8 @@ MonoBehaviour:
   blasterPieces: 0
   lazerPieces: 0
   missilePieces: 0
-  weaponSlot: {fileID: 7403638259815968883, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-  weapons: {fileID: 3012712762276472708}
-  sprites: []
+  weaponSlot: {fileID: 1844292932514135773, guid: be90771d02f82844496685e6b4d288c2, type: 3}
+  blaster: {fileID: 1383782589299464249, guid: 12bf0867008c51e419691b115c6b1569, type: 3}
 --- !u!50 &6846463785483884570
 Rigidbody2D:
   serializedVersion: 4
@@ -222,70 +220,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16525096, y: 0.11995876}
   m_EdgeRadius: 0
---- !u!1001 &6490482122485567498
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6846463785483884575}
-    m_Modifications:
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7403638259815968883, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-      propertyPath: m_Name
-      value: WeaponSlot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
---- !u!212 &3012712762276472708 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 8349002258217760654, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-  m_PrefabInstance: {fileID: 6490482122485567498}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6376271020529014649 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 175574070668642163, guid: 2e6ef064178390849a3e52594dfb65d2, type: 3}
-  m_PrefabInstance: {fileID: 6490482122485567498}
-  m_PrefabAsset: {fileID: 0}

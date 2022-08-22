@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906263780299603817}
   - component: {fileID: 3319461408642113022}
+  - component: {fileID: 110680562323666520}
   m_Layer: 0
   m_Name: BlasterL
   m_TagString: Untagged
@@ -84,3 +85,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &110680562323666520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383782589299464249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0bb6a5e5cf6e84faf04aa9d2d15f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 1.25
