@@ -7,12 +7,13 @@ public class OnHit : MonoBehaviour
 
     public float health = 100f;
     public GameObject deathEffect;
+    public PlayerShip boolToSet;
 
 
 
     public int slotNumber;
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, int i)
     {
         //ship takes damage
         health -= damage;
@@ -20,15 +21,22 @@ public class OnHit : MonoBehaviour
         if (health <= 0)
         {
             //run the die function
-            Die();
+            Die(i);
         }
     }
-    private void Die()
+    private void Die(int i)
     {
-            //create the death animation
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
 
-            //destroy the ship
-            Destroy(gameObject);
+        if ((i - 2) >= 0)
+        {
+            GameObject g = GameObject.FindGameObjectWithTag("Player");
+            boolToSet = g.GetComponent<PlayerShip>();
+            boolToSet.slots[i - 2] = true;
+        }
+        //create the death animation
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
+
+        //destroy the ship
+        Destroy(gameObject);
     }
 }

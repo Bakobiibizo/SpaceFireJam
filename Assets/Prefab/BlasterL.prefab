@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponFire: {fileID: 5477015379917617933, guid: 4c689efa8f649214f91ea729c0c838ef, type: 3}
-  weaponSpawn: {fileID: 0}
+  weaponSpawn: {fileID: 2462166328598689021}
 --- !u!1001 &5517209547113840015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,6 +200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+--- !u!1 &2462166328598689021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7978777517979879794, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
+  m_PrefabInstance: {fileID: 5517209547113840015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6015549775133386110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}

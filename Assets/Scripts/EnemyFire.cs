@@ -26,12 +26,11 @@ public class EnemyFire : MonoBehaviour
     {
 
         OnHit onHit = hitInfo.GetComponent<OnHit>();
-        Debug.Log(hitable[0]);
-        for(int i = 0; i <=5; i++){
-            Debug.Log(hitable[i]);
+        for (int i = 0; i <= 5; i++)
+        {
             if (hitInfo.tag == hitable[i])
             {
-                onHit.TakeDamage(damage);
+                onHit.TakeDamage(damage, i);
                 Destroy(gameObject);
                 Instantiate(enemyHit, transform.position, Quaternion.identity);
 

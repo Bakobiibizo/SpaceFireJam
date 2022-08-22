@@ -15,7 +15,7 @@ public class PlayerShip : MonoBehaviour
 
     public float missilePieces = 0f;
 
-    public bool[] slots = new bool[]{true, true, true, true};
+    public bool[] slots = new bool[] { true, true, true, true };
 
     public GameObject[] weaponSlotsArray;
 
@@ -62,22 +62,20 @@ public class PlayerShip : MonoBehaviour
         }
         if (blasterPieces >= 2)
         {
-            for (int i =0; i<=3; ++i){
-                if (slots[i]== true){
+            for (int i = 0; i <= 3; ++i)
+            {
+                if (slots[i] == true)
+                {
                     newBlaster = Instantiate(blasterArray[i], weaponSlotsArray[i].transform);
                     slots[i] = false;
                     blasterPieces = 0;
 
-                    slotNumber = "Slot"+i;
+                    slotNumber = "Slot" + i;
                     newBlaster.tag = slotNumber;
 
                     return;
                 }
             }
         }
-    }
-    public void CheckValue(int i){
-        slots[i] = true;
-
     }
 }
