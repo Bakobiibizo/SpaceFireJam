@@ -9,10 +9,11 @@ public class DropWeapon : MonoBehaviour
     [SerializeField]
     private float speed = 2f;
 
-    public string weaponType = "blaster";
+    public string weaponType;
     public AudioSource audioSource;
 
-    private void Awake(){
+    private void Awake()
+    {
         audioSource = gameObject.GetComponent<AudioSource>();
     }
 
@@ -28,10 +29,11 @@ public class DropWeapon : MonoBehaviour
         {
             {
 
-                audioSource.Play();
+
                 Destroy(gameObject);
 
                 player.WeaponUpgrades(weaponType);
+                audioSource.Play();
 
             }
         }

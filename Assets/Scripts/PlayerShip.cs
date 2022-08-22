@@ -20,8 +20,9 @@ public class PlayerShip : MonoBehaviour
     public GameObject[] weaponSlotsArray;
 
     public GameObject[] blasterArray;
+    public GameObject[] lazerArray;
 
-    private GameObject newBlaster;
+    private GameObject newWeapon;
 
     private string slotNumber;
 
@@ -66,12 +67,29 @@ public class PlayerShip : MonoBehaviour
             {
                 if (slots[i] == true)
                 {
-                    newBlaster = Instantiate(blasterArray[i], weaponSlotsArray[i].transform);
+                    newWeapon = Instantiate(blasterArray[i], weaponSlotsArray[i].transform);
                     slots[i] = false;
                     blasterPieces = 0;
 
                     slotNumber = "Slot" + i;
-                    newBlaster.tag = slotNumber;
+                    newWeapon.tag = slotNumber;
+
+                    return;
+                }
+            }
+        }
+        if (lazerPieces >= 2)
+        {
+            for (int i = 0; i <= 3; ++i)
+            {
+                if (slots[i] == true)
+                {
+                    newWeapon = Instantiate(lazerArray[i], weaponSlotsArray[i].transform);
+                    slots[i] = false;
+                    lazerPieces = 0;
+
+                    slotNumber = "Slot" + i;
+                    newWeapon.tag = slotNumber;
 
                     return;
                 }

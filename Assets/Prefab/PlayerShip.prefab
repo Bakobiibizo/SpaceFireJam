@@ -150,6 +150,11 @@ MonoBehaviour:
   - {fileID: 1056217514763865351, guid: 283a611367830a542a174e621f9ff198, type: 3}
   - {fileID: 1383782589299464249, guid: 12bf0867008c51e419691b115c6b1569, type: 3}
   - {fileID: 1056217514763865351, guid: 283a611367830a542a174e621f9ff198, type: 3}
+  lazerArray:
+  - {fileID: 7220890621000398911, guid: de0bad90754ebbb40b103ee50608968e, type: 3}
+  - {fileID: 2650493280125873295, guid: 773ac37e6c9390c48a03165fa9771ed5, type: 3}
+  - {fileID: 7220890621000398911, guid: de0bad90754ebbb40b103ee50608968e, type: 3}
+  - {fileID: 2650493280125873295, guid: 773ac37e6c9390c48a03165fa9771ed5, type: 3}
 --- !u!50 &6846463785483884570
 Rigidbody2D:
   serializedVersion: 4
@@ -212,8 +217,6 @@ MonoBehaviour:
   weaponFire: {fileID: 5477015379917617933, guid: 4c689efa8f649214f91ea729c0c838ef, type: 3}
   weaponSpawn: {fileID: 7244591703976863472}
   wait: 0.25
-  timer: 0
-  waitTime: 1
 --- !u!114 &7581477217986765112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,7 +231,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   deathEffect: {fileID: 5312208882027199082, guid: 510f963319727754e9980c6bb4061a49, type: 3}
-  audioSource: {fileID: -7772580460633587893}
 --- !u!82 &-7772580460633587893
 AudioSource:
   m_ObjectHideFlags: 0

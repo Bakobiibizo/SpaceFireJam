@@ -129,7 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   deathEffect: {fileID: 5312208882027199082, guid: 510f963319727754e9980c6bb4061a49, type: 3}
-  audioSource: {fileID: 4636735061233856861}
 --- !u!114 &-7899868295466722942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,9 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponFire: {fileID: 5477015379917617933, guid: 4c689efa8f649214f91ea729c0c838ef, type: 3}
   weaponSpawn: {fileID: 5966472636019829225}
-  wait: 1
-  timer: 0
-  waitTime: 0
+  wait: 0.5
 --- !u!82 &4636735061233856861
 AudioSource:
   m_ObjectHideFlags: 0

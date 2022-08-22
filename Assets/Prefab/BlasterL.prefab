@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponFire: {fileID: 5477015379917617933, guid: 4c689efa8f649214f91ea729c0c838ef, type: 3}
   weaponSpawn: {fileID: 2462166328598689021}
-  wait: 1
+  wait: 0.5
 --- !u!82 &3837382664892651669
 AudioSource:
   m_ObjectHideFlags: 0
