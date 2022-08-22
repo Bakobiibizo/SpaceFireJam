@@ -1,0 +1,51 @@
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Obj/
+Logs/
+UnityGenerated/
+Library/
+Assets/AssetStoreTools*
+Builds/
+UserSettings/
+D:/GameDev/Game Jam/score-space-project/.gitkeep
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ======= #
+# Plugins #
+# ======= #
+Assets/UnityVS/
+Assets/UnityVS.meta
+#*.dll
+
+# ======= #
+# VSCode #
+# ======= #
+.vscode/
+Assets/Plugins/Editor/VSCode.cs
+Assets/Plugins/Editor/VSCode.cs.meta
