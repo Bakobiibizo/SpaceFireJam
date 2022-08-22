@@ -32,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2126843748865291874}
+  - {fileID: 2566474394503231594}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   deathEffect: {fileID: 5312208882027199082, guid: 510f963319727754e9980c6bb4061a49, type: 3}
+  slotNumber: 0
 --- !u!114 &-7899868295466722942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponFire: {fileID: 5477015379917617933, guid: 4c689efa8f649214f91ea729c0c838ef, type: 3}
-  weaponSpawn: {fileID: 7842113320393697249}
---- !u!1001 &5525438635477247947
+  weaponSpawn: {fileID: 2340329921726627882, guid: 77d77596b0b88924ab01edfa14e0b83c, type: 3}
+--- !u!1001 &8266267962075720131
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -199,13 +200,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77d77596b0b88924ab01edfa14e0b83c, type: 3}
---- !u!4 &2126843748865291874 stripped
+--- !u!4 &2566474394503231594 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5848588457524793769, guid: 77d77596b0b88924ab01edfa14e0b83c, type: 3}
-  m_PrefabInstance: {fileID: 5525438635477247947}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7842113320393697249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2340329921726627882, guid: 77d77596b0b88924ab01edfa14e0b83c, type: 3}
-  m_PrefabInstance: {fileID: 5525438635477247947}
+  m_PrefabInstance: {fileID: 8266267962075720131}
   m_PrefabAsset: {fileID: 0}

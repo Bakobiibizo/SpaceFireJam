@@ -182,6 +182,13 @@ MonoBehaviour:
   damage: 20
   enemyLifespan: 2
   enemyHit: {fileID: 4512086912070105489, guid: eb8885434b3079a45b749e0f5e869cd3, type: 3}
+  hitable:
+  - Weapon
+  - Player
+  - Slot0
+  - Slot1
+  - Slot2
+  - Slot3
 --- !u!114 &1518740600772142517
 MonoBehaviour:
   m_ObjectHideFlags: 0

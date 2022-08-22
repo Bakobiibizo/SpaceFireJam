@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Weapon
+  - Slot0
+  - Slot1
+  - Slot2
+  - Slot3
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,10 @@ public class OnHit : MonoBehaviour
     public float health = 100f;
     public GameObject deathEffect;
 
+
+
+    public int slotNumber;
+
     public void TakeDamage(int damage)
     {
         //ship takes damage
@@ -21,12 +25,10 @@ public class OnHit : MonoBehaviour
     }
     private void Die()
     {
-        {
             //create the death animation
             Instantiate(deathEffect, transform.position, Quaternion.identity);
+
             //destroy the ship
             Destroy(gameObject);
-
-        }
     }
 }

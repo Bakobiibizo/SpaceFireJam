@@ -32,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7979065179910561679}
+  - {fileID: 6015549775133386110}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -98,7 +98,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0033961795, y: -0.017358242}
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   deathEffect: {fileID: 5312208882027199082, guid: 510f963319727754e9980c6bb4061a49, type: 3}
+  slotNumber: 0
 --- !u!114 &5773493440224247589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponFire: {fileID: 5477015379917617933, guid: 4c689efa8f649214f91ea729c0c838ef, type: 3}
-  weaponSpawn: {fileID: 2300086089170095628}
---- !u!1001 &8165523093156874110
+  weaponSpawn: {fileID: 0}
+--- !u!1001 &5517209547113840015
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -199,13 +200,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
---- !u!1 &2300086089170095628 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7978777517979879794, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
-  m_PrefabInstance: {fileID: 8165523093156874110}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7979065179910561679 stripped
+--- !u!4 &6015549775133386110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2299816019391977713, guid: 05bfcc3086130db46ac7d8e6fc76c965, type: 3}
-  m_PrefabInstance: {fileID: 8165523093156874110}
+  m_PrefabInstance: {fileID: 5517209547113840015}
   m_PrefabAsset: {fileID: 0}

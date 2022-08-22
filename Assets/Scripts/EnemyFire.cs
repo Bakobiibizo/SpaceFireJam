@@ -9,6 +9,7 @@ public class EnemyFire : MonoBehaviour
     public int damage = 20;
     public float enemyLifespan = 1.5f;
     public GameObject enemyHit;
+    public string[] hitable;
 
     void Start()
     {
@@ -25,18 +26,16 @@ public class EnemyFire : MonoBehaviour
     {
 
         OnHit onHit = hitInfo.GetComponent<OnHit>();
+        Debug.Log(hitable[0]);
+        for(int i = 0; i <=5; i++){
+            Debug.Log(hitable[i]);
+            if (hitInfo.tag == hitable[i])
+            {
+                onHit.TakeDamage(damage);
+                Destroy(gameObject);
+                Instantiate(enemyHit, transform.position, Quaternion.identity);
 
-        if (hitInfo.tag == "Player")
-        {
-            onHit.TakeDamage(damage);
-            Destroy(gameObject);
-            Instantiate(enemyHit, transform.position, Quaternion.identity);
-        }
-        if (hitInfo.tag == "Weapon")
-        {
-            onHit.TakeDamage(damage);
-            Destroy(gameObject);
-            Instantiate(enemyHit, transform.position, Quaternion.identity);
+            }
         }
     }
 }

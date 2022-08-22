@@ -15,18 +15,27 @@ public class PlayerShip : MonoBehaviour
 
     public float missilePieces = 0f;
 
-    public bool[] slots = new bool[]{true, true};
+    public bool[] slots = new bool[]{true, true, true, true};
 
     public GameObject[] weaponSlotsArray;
 
     public GameObject[] blasterArray;
 
+    public GameObject newBlaster;
+
+    public string slotNumber;
+
+
+
     void Start()
     {
         //accessing the rigidbody component
         playerShip = GetComponent<Rigidbody2D>();
+
         weaponSlotsArray[0] = Instantiate(weaponSlotsArray[0], gameObject.transform);
         weaponSlotsArray[1] = Instantiate(weaponSlotsArray[1], gameObject.transform);
+        weaponSlotsArray[2] = Instantiate(weaponSlotsArray[2], gameObject.transform);
+        weaponSlotsArray[3] = Instantiate(weaponSlotsArray[3], gameObject.transform);
     }
 
     void Update()
@@ -53,14 +62,22 @@ public class PlayerShip : MonoBehaviour
         }
         if (blasterPieces >= 2)
         {
-            for (int i =0; i<=1; ++i){
+            for (int i =0; i<=3; ++i){
                 if (slots[i]== true){
-                    Instantiate(blasterArray[i], weaponSlotsArray[i].transform);
+                    newBlaster = Instantiate(blasterArray[i], weaponSlotsArray[i].transform);
                     slots[i] = false;
                     blasterPieces = 0;
+
+                    slotNumber = "Slot"+i;
+                    newBlaster.tag = slotNumber;
+
                     return;
                 }
             }
         }
+    }
+    public void CheckValue(int i){
+        slots[i] = true;
+
     }
 }
