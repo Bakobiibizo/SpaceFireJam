@@ -239,9 +239,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lazerFire: {fileID: 785178276666971459, guid: 1de83b9dc83886e409204f01b49db9d3, type: 3}
   lazerSpawn: {fileID: 5045515190729447887}
-  damage: 80
-  Range: 1
-  wait: 2
+  damage: 100
+  wait: 3
+  enemy: {fileID: -8369173493977546354, guid: 1dcc67358a4bf4b4fa177cf425e26eb1, type: 3}
+  lazerHit: {fileID: 838312478706285175, guid: a01e396bec123d54fb8df043542e5a0b, type: 3}
+  lazerDistance: 100
+  color: {r: 1, g: 1, b: 1, a: 0}
+  duration: 50
+  depthTest: 1
 --- !u!1001 &1918036062353611578
 PrefabInstance:
   m_ObjectHideFlags: 0

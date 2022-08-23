@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnHit : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class OnHit : MonoBehaviour
     public float health = 100f;
     public GameObject deathEffect;
     private PlayerShip boolToSet;
+    public GameObject GameManager;
 
     private int slotNumber;
 
@@ -30,6 +32,12 @@ public class OnHit : MonoBehaviour
             GameObject g = GameObject.FindGameObjectWithTag("Player");
             boolToSet = g.GetComponent<PlayerShip>();
             boolToSet.slots[i - 2] = true;
+        }
+        if (i == 1)
+        {
+            GameManager gameManager = GameManager.GetComponent<GameManager>();
+            gameManager.ResetTheGame();
+            gameManager.playerDead = true;
         }
         //create the death animation
         Instantiate(deathEffect, transform.position, Quaternion.identity);
